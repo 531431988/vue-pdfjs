@@ -29,7 +29,7 @@ export default {
 #### :src <sup>String - default: ''<sup>
 PDF 路径
 
-#### :type <sup>Number - default: 0<sup>
+#### :type <sup>Number - default: 1<sup>
 PDF显示效果默认简洁，可选参数0 or 1
 
 #### :height <sup>String - default: '500px'<sup>

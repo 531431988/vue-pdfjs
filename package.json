@@ -1,6 +1,6 @@
 {
   "name": "vue-pdfjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "vue pdf preview",
   "main": "index.js",
   "scripts": {
