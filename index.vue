@@ -29,7 +29,7 @@ export default {
   created () {
     if (this.type) {
       // this.options.PDFJS_URL = 'http://mozilla.github.io/pdf.js/web/viewer.html'
-      this.options.PDFJS_URL = 'static/pdfjs/web/viewer.html'
+      this.options.PDFJS_URL = '../node_modules/vue-pdfjs/pdfjs/web/viewer.html'
     } else {
       this.options.pdfOpenParams = {
         navpanes: 0,
