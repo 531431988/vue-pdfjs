@@ -1,0 +1,16 @@
+{
+  "name": "vui-pdf",
+  "version": "1.0.1",
+  "description": "vue pdf preview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "pdf",
+    "preview"
+  ],
+  "author": "531431988@qq.com",
+  "license": "ISC"
+}
