@@ -10,8 +10,12 @@ export default {
     },
     url: {
       type: String,
-      default: ''
       // default: 'http://192.168.7.61/00/20/wKgHPVoUHZGADnDzAF5sQVBjuTA965.pdf'
+      default: ''
+    },
+    height: {
+      type: String,
+      default: '500px'
     }
   },
   data: () => ({
@@ -40,9 +44,7 @@ export default {
   mounted () {
     this.pdf = PDF
     this.pdf.embed(this.url, this.$el, this.options)
+    this.$el.style.height = this.height
   }
 }
 </script>
-<style>
-.pdfobject-container { height: 500px;}
-</style>
