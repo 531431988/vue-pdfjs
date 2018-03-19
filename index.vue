@@ -6,11 +6,12 @@ export default {
   props: {
     type: {
       type: Number,
-      default: 1
+      default: 0
     },
     url: {
       type: String,
-      default: 'http://192.168.7.61/00/20/wKgHPVoUHZGADnDzAF5sQVBjuTA965.pdf'
+      default: ''
+      // default: 'http://192.168.7.61/00/20/wKgHPVoUHZGADnDzAF5sQVBjuTA965.pdf'
     }
   },
   data: () => ({

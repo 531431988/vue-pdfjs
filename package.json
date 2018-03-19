@@ -1,5 +1,5 @@
 {
-  "name": "vui-pdf",
+  "name": "vue-pdfjs",
   "version": "1.0.1",
   "description": "vue pdf preview",
   "main": "index.js",
@@ -11,6 +11,10 @@
     "pdf",
     "preview"
   ],
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/531431988/vue-pdfjs.git"
+  },
   "author": "531431988@qq.com",
   "license": "ISC",
   "dependencies": {
