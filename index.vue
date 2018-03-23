@@ -13,6 +13,10 @@ export default {
       // default: 'http://192.168.7.61/00/20/wKgHPVoUHZGADnDzAF5sQVBjuTA965.pdf'
       default: ''
     },
+    viewer: {
+      type: String,
+      default: ''
+    },
     height: {
       type: String,
       default: '500px'
@@ -29,7 +33,7 @@ export default {
   created () {
     if (this.type) {
       // this.options.PDFJS_URL = 'http://mozilla.github.io/pdf.js/web/viewer.html'
-      this.options.PDFJS_URL = './static/pdfjs/web/viewer.html'
+      this.options.PDFJS_URL = `${this.viewer}/pdfjs/web/viewer.html`
     } else {
       this.options.pdfOpenParams = {
         navpanes: 0,
