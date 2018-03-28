@@ -10,7 +10,6 @@ export default {
     },
     url: {
       type: String,
-      // default: 'http://192.168.7.61/00/20/wKgHPVoUHZGADnDzAF5sQVBjuTA965.pdf'
       default: ''
     },
     viewer: {
@@ -45,11 +44,14 @@ export default {
     }
   },
   methods: {
+    loadPdf (url) {
+      this.pdf = PDF
+      this.pdf.embed(url, this.$el, this.options)
+      this.$el.style.height = this.height
+    }
   },
   mounted () {
-    this.pdf = PDF
-    this.pdf.embed(this.url, this.$el, this.options)
-    this.$el.style.height = this.height
+    this.loadPdf(this.url)
   }
 }
 </script>
